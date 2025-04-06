@@ -1,0 +1,90 @@
+{
+  "Ethereum": {
+    "chain_id": 1,
+    "rpc_url": "https://eth.llamarpc.com",
+    "explorer_url": "https://etherscan.io/",
+    "to_address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+    "from_address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+    "router_address": "0xCf5540fFFCdC3d510B18bFcA6d2b9987b0772559"
+  },
+  "Optimism": {
+    "chain_id": 10,
+    "rpc_url": "https://optimism.llamarpc.com",
+    "explorer_url": "https://optimistic.etherscan.io/",
+    "to_address": "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
+    "from_address": "0x4200000000000000000000000000000000000006",
+    "router_address": "0xCa423977156BB05b13A2BA3b76Bc5419E2fE9680"
+  },
+  "BNB": {
+    "chain_id": 56,
+    "rpc_url": "https://binance.llamarpc.com",
+    "explorer_url": "https://bscscan.com/",
+    "to_address": "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+    "from_address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+    "router_address": "0x89b8AA89FDd0507a99d334CBe3C808fAFC7d850E"
+  },
+  "Polygon": {
+    "chain_id": 137,
+    "rpc_url": "https://polygon.llamarpc.com",
+    "explorer_url": "https://polygonscan.com/",
+    "to_address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+    "from_address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+    "router_address": "0x4E3288c9ca110bCC82bf38F09A7b425c095d92Bf"
+  },
+  "Fantom": {
+    "chain_id": 250,
+    "rpc_url": "https://fantom-pokt.nodies.app",
+    "explorer_url": "https://ftmscan.com/",
+    "to_address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
+    "from_address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
+    "router_address": "0xD0c22A5435F4E8E5770C1fAFb5374015FC12F7cD"
+  },
+  "Fraxtal": {
+    "chain_id": 252,
+    "rpc_url": "https://fraxtal.drpc.org",
+    "explorer_url": "https://fraxscan.com/",
+    "to_address": "0xf6a011fAC307f55Cd4bA8e43b8b93f39808DdaA9",
+    "from_address": "0xFC00000000000000000000000000000000000006",
+    "router_address": "0x56c85a254DD12eE8D9C04049a4ab62769Ce98210"
+  },
+  "zkSync Era": {
+    "chain_id": 324,
+    "rpc_url": "https://1rpc.io/zksync2-era",
+    "explorer_url": "https://era.zksync.network/",
+    "to_address": "0x4B9eb6c0b6ea15176BBF62841C6B2A8a398cb656",
+    "from_address": "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
+    "router_address": "0x4bBa932E9792A2b917D47830C93a9BC79320E4f7"
+  },
+  "Base": {
+    "chain_id": 8453,
+    "rpc_url": "https://base-pokt.nodies.app",
+    "explorer_url": "https://basescan.org/",
+    "to_address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+    "from_address": "0x4200000000000000000000000000000000000006",
+    "router_address": "0x19cEeAd7105607Cd444F5ad10dd51356436095a1"
+  },
+  "Arbitrum": {
+    "chain_id": 42161,
+    "rpc_url": "https://arbitrum.llamarpc.com",
+    "explorer_url": "https://arbiscan.io/",
+    "to_address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+    "from_address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+    "router_address": "0xa669e7A0d4b3e4Fa48af2dE86BD4CD7126Be4e13"
+  },
+  "Linea": {
+    "chain_id": 59144,
+    "rpc_url": "https://1rpc.io/linea",
+    "explorer_url": "https://lineascan.build/",
+    "to_address": "0x4AF15ec2A0BD43Db75dd04E62FAA3B8EF36b00d5",
+    "from_address": "0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f",
+    "router_address": "0x2d8879046f1559E53eb052E949e9544bCB72f414"
+  },
+  "Scroll": {
+    "chain_id": 534352,
+    "rpc_url": "https://1rpc.io/scroll",
+    "explorer_url": "https://scrollscan.com/",
+    "to_address": "0xcA77eB3fEFe3725Dc33bccB54eDEFc3D9f764f97",
+    "from_address": "0x5300000000000000000000000000000000000004",
+    "router_address": "0xbFe03C9E20a9Fc0b37de01A172F207004935E0b1"
+  }
+}
