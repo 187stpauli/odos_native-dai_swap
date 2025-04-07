@@ -58,25 +58,37 @@ class ConfigValidator:
     async def validate_network(network: str) -> None:
         """Валидация названия сети"""
         networks = [
-            "Ethereum", "Optimism", "BNB", "Polygon", "Fantom", "Fraxtal",
-            "zkSync Era", "Mantle", "Base", "Arbitrum", "Linea", "Scroll"
+            "Ethereum",
+            "Optimism",
+            "BNB",
+            "Polygon",
+            "Fantom",
+            "Fraxtal",
+            "zkSync Era",
+            "Mantle",
+            "Base",
+            "Arbitrum",
+            "Linea",
+            "Scroll",
         ]
         if network not in networks:
-            print("Ошибка: Неподдерживаемая сеть! Введите одну из поддерживаемых сетей.")
+            print(
+                "Ошибка: Неподдерживаемая сеть! Введите одну из поддерживаемых сетей."
+            )
             exit(1)
 
     @staticmethod
     async def validate_proxy(proxy: str) -> None:
         """Валидация прокси-адреса"""
-        pattern = r"^(?P<login>[^:@]+):(?P<password>[^:@]+)@(?P<host>[\w.-]+):(?P<port>\d+)$"
+        pattern = (
+            r"^(?P<login>[^:@]+):(?P<password>[^:@]+)@(?P<host>[\w.-]+):(?P<port>\d+)$"
+        )
         match = re.match(pattern, proxy)
         if not match:
             print("Ошибка: Неверный формат прокси! Должен быть 'login:pass@host:port'.")
             exit(1)
 
-        proxy_url = {
-            "http": f"http://{proxy}"
-        }
+        proxy_url = {"http": f"http://{proxy}"}
         response = requests.get("https://httpbin.org/ip", proxies=proxy_url, timeout=5)
         if response.status_code != 200:
             print("Ошибка: 'proxy' нерабочий или вернул неверный статус-код!")
@@ -84,9 +96,9 @@ class ConfigValidator:
 
     @staticmethod
     async def validate_amount(amount: str) -> None:
-        """Валидация количества NFT"""
+        """Валидация количества токенов"""
         try:
-            _ = int(amount)
+            _ = float(amount)
         except ValueError:
-            print("Ошибка количества NFT! Введите целое число.")
+            print("Ошибка количества токенов! Введите число.")
             exit(1)
